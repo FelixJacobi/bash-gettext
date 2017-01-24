@@ -66,12 +66,13 @@ __() {
 
   for a in $@
   do
-    # ignore first paramter, it it translated expression
+    # ignore first paramter, it is translated expression
     if [ $loops -lt 1 ]
       continue
     fi
 
     args+=($a)
+    loops=$(expr $loops + 1)
   done
 
   echo $(printf "$ret" ${args[@]})
