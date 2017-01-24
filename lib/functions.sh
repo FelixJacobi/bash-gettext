@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# ENIRONMENT:
+# ENVIRONMENT:
 #
 # $BASHGT_DOMAIN = Domain for gettext
 
@@ -60,6 +60,24 @@ _p() {
 }
 
 __() {
+  if [ -z "$1" ]
+  then
+    bashgt_print_stderr "bash-gettext (__('$1', '$2', [replacments, ...])): Parameter 1 missing."
+    return 1
+  fi
+
+  if [ -z "$2" ]
+  then
+    bashgt_print_stderr "bash-gettext (__('$1', '$2', [replacements, ...])): Parameter 2 missing."
+    return 1
+  fi
+
+  if [ -z "$BASHGT_DOMAIN" ]
+  then
+    bashgt_print_stderr "bash-gettext (__('$1', '$2', [replacements, ...])): No gettext domain set."
+    return 1
+  fi
+
   local ret=$(_ "$1")
   local loops=0
   local args=()
