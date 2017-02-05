@@ -29,7 +29,7 @@ _() {
     return 1
   fi
 
-  echo $(gettext -d "$BASHGT_DOMAIN" "$1")
+  echo -n "$(gettext -d "$BASHGT_DOMAIN" "$1")"
 }
 
 # translate string with msgctxt
@@ -56,13 +56,13 @@ _p() {
     return 1
   fi
 
-  echo $(gettext -d "$BASHGT_DOMAIN" "$1" "$2")
+  echo -n "$(gettext -d "$BASHGT_DOMAIN" "$1" "$2")"
 }
 
 __() {
-  local ret=$(_ "$1")
-  local loops=0
-  local args=()
+  ret=$(_ "$1")
+  loops=0
+  args=()
 
   for a in $@
   do
@@ -75,5 +75,5 @@ __() {
     args+=($a)
   done
 
-  echo $(printf "$ret" ${args[@]})
+  echo -n "$(printf "$ret" ${args[@]})"
 }
