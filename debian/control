@@ -1,0 +1,19 @@
+Source: bash-gettext
+Section: devel
+Priority: optional
+Maintainer: Felix Jacobi <felix.jacobi@stsbl.de>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: https://github.com/FelixJacobi/bash-gettext
+
+Package: bash-gettext
+Architecture: all
+Depends: gettext, bash
+Description: Bash gettext support
+ This package provides support for the typically gettext shortcuts like:
+ .
+ * _()
+ * __()
+ * _p()
+ .
+ in Bash (and other compatible shells) scripts.
