@@ -9,7 +9,7 @@
 # parameters:
 # $1 = message
 bashgt_print_stderr() {
-  echo "$1" &>2
+  echo "$1" 1>&2
 }
 
 # translate simple string
