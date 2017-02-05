@@ -87,6 +87,7 @@ __() {
     # ignore first paramter, it is translated expression
     if [ $loops -lt 1 ]
     then
+      loops=$(expr $loops + 1)
       continue
     fi
 
