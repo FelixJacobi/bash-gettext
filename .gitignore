@@ -1,0 +1,5 @@
+debian/bash-gettext/*
+debian/bash-gettext.debhelper.log
+debian/bash-gettext.substvars
+debian/files
+debian/debhelper-build-stamp
