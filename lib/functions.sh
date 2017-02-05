@@ -68,6 +68,7 @@ __() {
   do
     # ignore first paramter, it it translated expression
     if [ $loops -lt 1 ]
+    then
       continue
     fi
 
