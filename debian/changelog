@@ -1,5 +1,5 @@
-bash-gettext (1.0-1) unstable; urgency=low
+bash-gettext (1.0) experimental; urgency=medium
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release.
 
- -- Felix Jacobi <felix.jacobi@stsbl.de>  Sun, 05 Feb 2017 16:54:49 +0100
+ -- Felix Jacobi <felix.jacobi@stsbl.de>  Sun, 05 Feb 2017 18:42:21 +0100
