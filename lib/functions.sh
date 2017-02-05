@@ -82,7 +82,7 @@ __() {
   loops=0
   args=()
 
-  for a in $@
+  for a in "$@"
   do
     # ignore first paramter, it is translated expression
     if [ $loops -lt 1 ]
