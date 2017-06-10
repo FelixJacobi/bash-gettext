@@ -8,12 +8,14 @@ Homepage: https://github.com/FelixJacobi/bash-gettext
 
 Package: bash-gettext
 Architecture: all
-Depends: gettext, bash
+Depends: gettext, bash, perl-base
 Description: Bash gettext support
  This package provides support for the typically gettext shortcuts like:
  .
- * _()
- * __()
- * _p()
+ - _()
+ .
+ - __()
+ .
+ - _p()
  .
  in Bash (and other compatible shells) scripts.
