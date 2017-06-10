@@ -1,3 +1,10 @@
+bash-gettext (1.0.1) experimental; urgency=medium
+
+  * Fixed _p function.
+  * Added dependency on perl-base.
+
+ -- Felix Jacobi <felix.jacobi@stsbl.de>  Sat, 10 Jun 2017 16:19:19 +0200
+
 bash-gettext (1.0) experimental; urgency=medium
 
   * Initial release.
