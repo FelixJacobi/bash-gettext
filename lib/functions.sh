@@ -55,8 +55,8 @@ _p() {
     bashgt_print_stderr "bash-gettext (_p('$1', '$2')): No gettext domain set."
     return 1
   fi
-
-  echo -n "$(gettext -d "$BASHGT_DOMAIN" "$1" "$2")"
+ 
+  echo -n "$(perl -e 'system "gettext", "-d", "'$BASHGT_DOMAIN'", "'$1'".chr(4)."'$2'";')" 
 }
 
 __() {
