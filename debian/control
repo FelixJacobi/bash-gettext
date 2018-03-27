@@ -3,12 +3,18 @@ Section: devel
 Priority: optional
 Maintainer: Felix Jacobi <felix.jacobi@stsbl.de>
 Build-Depends: debhelper (>= 10)
-Standards-Version: 3.9.5
+Build-Depends-Indep: iserv3-dev
+Standards-Version: 4.1.3.0
 Homepage: https://github.com/FelixJacobi/bash-gettext
 
 Package: bash-gettext
 Architecture: all
-Depends: gettext, bash, perl-base
+Depends: ${misc:Depends},
+  ${perl:Depends},
+  bash,
+  gettext,
+  perl-base,
+Xb-Private-IServ-Revision: ${iserv:Revision}
 Description: Bash gettext support
  This package provides support for the typically gettext shortcuts like:
  .
