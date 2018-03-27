@@ -2,7 +2,7 @@ Source: bash-gettext
 Section: devel
 Priority: optional
 Maintainer: Felix Jacobi <felix.jacobi@stsbl.de>
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 10)
 Standards-Version: 3.9.5
 Homepage: https://github.com/FelixJacobi/bash-gettext
 
